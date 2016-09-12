@@ -1,0 +1,534 @@
+.page
+	width 100%
+	min-width 1226px
+	height 1700px
+	background rgb(238,238,238)
+	.top
+		position absolute
+		left 0
+		top 0
+		width 100%
+		min-width 1226px
+		height 60px
+		background rgb(120,120,120)
+		z-index 999999
+		&.top1
+			overflow hidden
+			position fixed
+			height 0
+		.center
+			width 1226px
+			height 60px
+			margin 0 auto
+			.icon
+				float left
+				width 60px
+				height 60px
+				border-radius 50%
+				background url("../../image/user.png") no-repeat center
+				background-size 60px 60px
+			ul
+				float left
+				margin-left 260px
+				width 800px
+				height 60px
+				overflow hidden
+				li
+					float left
+					margin 0 40px
+					&:hover
+						cursor pointer
+					.in
+						color white
+						background rgb(255,120,5)
+						font-size 24px
+						line-height 60px
+						font-weight bold
+						margin-top -60px
+						padding 0 20px
+					.out
+						color white
+						font-size 24px
+						line-height 60px
+						padding 0 20px			
+	.head
+		position relative
+		width 100%
+		min-width 1226px
+		margin 60px 0 auto
+		background url("../../image/head.png") no-repeat top center
+		background-size 1226px 200px
+		.user
+			position relative
+			width 1226px
+			height 200px
+			margin 0 auto
+			.img1
+				position absolute
+				top 100px
+				right 2%
+				width 204px
+				height 100px
+			.img2
+				position absolute
+				left 46%
+				top 10px
+				width 170px
+				height 170px
+				border-radius 50%
+				background-size cover
+				transition .5s linear
+				&:hover
+					box-shadow 0 0 20px rgba(255,168,130,.5)
+			&:hover 
+				.user1
+					opacity 1
+					background red
+					transform translate(-120px,20px)
+				.user2
+					opacity 1
+					background green
+					transform translate(180px,-40px)
+				.user3
+					opacity 1
+					background rgb(2,203,255)
+					transform translate(270px,30px)
+				.user4
+					opacity 1
+					background rgb(123,123,123)
+					transform translate(-220px,-40px)
+				.user5
+					opacity 1
+					background rgb(2,205,126)
+					transform translate(-340px,10px)
+			.user1,.user2,.user3,.user4,.user5
+				position absolute
+				left 47%
+				top 64px
+				width 100px
+				height 100px
+				border-radius 50%
+				opacity 0
+				color white
+				text-align center
+				line-height 100px
+				cursor pointer
+				font-weight bold
+			.user1
+				transition all .5s linear
+			.user2
+				transition all .6s linear
+			.user3
+				transition all .9s linear
+			.user4
+				transition all 1.1s linear
+			.user5
+				transition all 1.2s linear
+	.main
+		width 100%
+		margin 10px auto
+		position relative
+		.color
+			width 1226px
+			height 167px
+			padding 100px 0
+			margin 50px auto 200px
+			.name
+				position relative
+				left 0
+				bottom 0
+				float left
+				width 167px
+				height 167px
+				border-radius 22%
+				line-height 167px
+				text-align center
+				margin 0 4px
+				color white
+				cursor pointer
+				font-size 30px
+				transition all .3s linear
+				overflow hidden
+				.hidden
+					opacity 0
+					position absolute
+					top 200px
+					left 0
+					width 250px
+					height 250px
+					line-height 30px
+					padding 16px
+					word-wrap break-word
+					text-align left
+					color black
+					font-size 16px
+					background rgba(255,255,255,.8)
+					text-indent 2em
+					transition all .3s linear
+					
+				&:hover
+					transform translateY(-3px)
+					box-shadow 0 10px 30px rgb(120,120,120)
+					.hidden
+						opacity 1
+						transform translateY(-200px)
+				&.name1
+					background rgb(255,0,0)
+				&.name2
+					background rgb(255,165,0)
+				&.name3
+					background rgb(0,200,255)
+				&.name4
+					background rgb(100,0,255)
+				&.name5
+					background rgb(255,100,0)
+				&.name6
+					background rgb(139,0,200)
+				&.name7
+					background rgb(0,200,0)
+		.banner1
+			position relative
+			width 940px
+			height 530px
+			margin 0 auto
+			.banner
+				width 940px
+				height 530px
+			.imgs
+				position absolute
+				top 0
+				left 0
+				width 940px
+				height 530px
+				img
+					display none
+					width 940px
+					height 530px
+			.banner-l
+				position absolute
+				top 50%
+				left 0
+				width 41px
+				height 69px
+				margin-top -35px
+				overflow hidden
+				z-index 9999
+				background url("../../image/icon-slides.png") no-repeat -84px 50%
+				&:hover
+					cursor pointer
+					background-position 0 50%
+			.banner-r
+				position absolute
+				top 50%
+				right 0
+				width 41px
+				height 69px
+				margin-top -35px
+				overflow hidden
+				z-index 9999
+				background url("../../image/icon-slides.png") no-repeat -125px 50%
+				&:hover
+					cursor pointer
+					background-position -42px 50%
+			.dots
+				position absolute
+				bottom 20px
+				right 50%
+				transform translateX(50%)
+				z-index 999
+				a
+					color #666
+					font-size 12px
+					display inline-block
+					width 15px
+					height 15px
+					margin 0 5px
+					border 2px solid #fff
+					border-color rgba(255,255,255,0.3)
+					border-radius 50%
+					overflow hidden
+					background #f5f5f5
+					background rgba(0,0,0,0.4)
+					transition all .4s linear
+					&:hover
+						background-color #fff
+						border-color rgba(0,0,0,0.4)
+					&.current
+						background-color #fff
+						border-color rgba(0,0,0,0.4)
+		.contact
+			display none
+			position absolute
+			width 40px 
+			height 40px
+			right 1920px
+			&.wx
+				top -40px
+				background url("../../image/wx.png") no-repeat
+				&:hover
+					.erwx
+						opacity 1
+			&.qq
+				top 10px
+				background url("../../image/qq.png") no-repeat
+				&:hover
+					.erqq
+						opacity 1
+			&.wb
+				top 60px
+				background url("../../image/wb.png") no-repeat
+				&:hover
+					.erwb
+						opacity 1
+			.er
+				opacity 0
+				width 220px
+				height 220px
+				position absolute
+				left 40px
+				background url("../../image/wx2.png")
+				background-size 220px 220px
+				border 2px solid rgb(120,120,120)
+				box-shadow 0 10px 20px rgb(120,120,120)
+				transition all .3s linear
+				&.erwx
+					top 10px
+					&:hover
+						display none
+				&.erqq
+					top 7px
+					&:hover
+						display none
+				&.erwb
+					top 7px
+					&:hover
+						display none
+		.words
+			opacity 0
+			position absolute
+			right 0
+			top 0
+			color black
+			font-size 60px
+			font-family "方正黄草简体"
+			transition all 1s linear
+		.skills1
+			width 1226px
+			height 250px
+			margin 100px auto 50px
+			.html
+				position relative
+				left 0
+				bottom 0
+				float left
+				width 167px
+				height 167px
+				border-radius 20%
+				line-height 167px
+				text-align center
+				margin 0 4px
+				color white
+				cursor pointer
+				font-size 36px
+				transition all .3s linear
+				overflow hidden
+				&:hover
+					transform translateY(-3px)
+					box-shadow 0 10px 30px rgb(120,120,120)
+					.hidden
+						opacity 1
+						transform translateX(200px)
+				&.html1
+					background rgb(255,0,120)
+				&.css
+					background rgb(255,120,0)
+				&.js
+					background rgb(200,50,50)
+				&.jq
+					background rgb(100,220,100)
+				&.ajax
+					background rgb(95,120,255)
+				&.styl
+					background rgb(0,120,120)
+				&.gulp
+					background rgb(0,120,255)
+				.hidden
+					opacity 0
+					position absolute
+					top 0
+					left -200px
+					width 250px
+					height 250px
+					line-height 20px
+					padding 20px
+					word-wrap break-word
+					text-indent 2em
+					text-align left
+					color black
+					font-size 16px
+					background rgba(255,255,255,.8)
+					transition all .3s linear
+				
+					
+.blur
+	filter url(blur.svg#blur)
+	-webkit-filter blur(3px)
+	-moz-filter blur(3px)
+	-ms-filter blur(3px)
+	filter blur(3px)
+.aboutMe
+	position fixed
+	left 0
+	top 0
+	width 100%
+	height 100%
+	background-color rgba(0,0,0,0)
+	cursor pointer
+.about1
+	.aboutMe1
+		opacity 0
+		position fixed
+		left 50%
+		top 50%
+		width 300px
+		height 300px
+		background url("../../image/about.jpg") no-repeat center
+		background-size 300px 300px
+		transition all .5s linear
+		box-shadow 0 0 20px rgba(120,120,120,.8)
+		transform translate(-50%,-150%)
+		&.me
+			opacity 1
+			height 300px
+			transform translate(-50%,-50%)
+			z-index 999999
+		.close
+			position absolute
+			right 0
+			top 0
+			width 40px
+			height 40px
+			background url("../../image/close.png") no-repeat center
+			background-size 40px 40px
+		.name
+			position absolute
+			top 0
+			left 0
+			width 100px
+			height 100px
+			line-height 100px
+			border-radius 50%
+			background rgba(255,120,120,.5)
+			text-align center
+			color red
+			font-size 20px
+			font-weight bold
+			animation name 16s infinite
+		.year
+			position absolute
+			top 100px
+			left 100px
+			width 70px
+			height 70px
+			line-height 70px
+			border-radius 50%
+			background rgba(0,120,120,.5)
+			text-align center
+			color rgb(120,12,255)
+			font-size 13px
+			font-weight bold
+			animation year 19s infinite
+		.area
+			position absolute
+			top 170px
+			left 200px
+			width 90px
+			height 90px
+			line-height 90px
+			border-radius 50%
+			background rgba(255,0,120,.5)
+			text-align center
+			color black
+			font-size 14px
+			color green
+			font-size 18px
+			font-weight bold
+			animation area 18s infinite
+		.boy
+			position absolute
+			top 220px
+			left 50px
+			width 70px
+			height 70px
+			line-height 70px
+			border-radius 50%
+			background rgba(120,120,120,.5)
+			text-align center
+			color black
+			font-size 16px
+			font-weight bold
+			animation boy 17s infinite
+.fixed
+	display none
+	position fixed
+	right 4px
+	bottom 50px
+	transition all .2s linear
+@keyframes name
+	0%
+		top 0px
+		left 0px
+	20%
+		top 100px
+		left 100px
+	40%
+		top 150px
+		left 150px
+	60%
+		top 75px
+		left 100px
+	80%
+		top 20px
+		left 50px
+	100%
+		top 0px
+		left 0px	
+@keyframes year
+	0%
+		top 100px
+		left 100px
+	33%
+		top 190px
+		left 200px
+	66%
+		top 30px
+		left 180px
+	100%
+		top 100px
+		left 100px
+@keyframes area
+	0%
+		top 170px
+		left 200px
+	33%
+		top 70px
+		left 20px
+	66%
+		top 150px
+		left 100px
+	100%
+		top 170px
+		left 200px
+@keyframes boy
+	0%
+		top 220px
+		left 50px
+	33%
+		top 150px
+		left 100px
+	66%
+		top 30px
+		left 130px
+	100%
+		top 220px
+		left 50px
